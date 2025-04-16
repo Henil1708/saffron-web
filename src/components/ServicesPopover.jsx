@@ -23,7 +23,7 @@ const ServicesPopover = () => {
     <div className="relative flex items-center" ref={popoverRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`relative text-[20px] font-bold focus:outline-none cursor-pointer ${
+        className={`relative text-black text-xs md:text-sm  hover:underline font-bold focus:outline-none cursor-pointer ${
           isOpen ? "text-[#00ABAC]" : "text-black"
         }`}
       >
@@ -40,7 +40,7 @@ const ServicesPopover = () => {
         )}
       </button>
       {isOpen && (
-        <div className="absolute left-0 mt-[300px] w-[168px] bg-white border-t-[4px] border-[#00ABAC] shadow-lg z-10">
+        <div className="absolute left-0 mt-[300px] w-[168px] bg-white border-t-[4px] border-[#00ABAC] shadow-lg z-20">
           <ul className="py-2">
             <li>
               <Link

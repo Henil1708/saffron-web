@@ -17,13 +17,13 @@ export default function About() {
           text="About Us"
           className="
             text-white font-bold 
-            text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px]
+            text-[20px]  md:text-[38px] lg:text-[40px]
             mx-auto 
             px-6 sm:px-10 md:px-20 
             w-[80%] sm:w-[364px] 
             leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[75px]
             absolute -top-4 sm:-top-6 md:-top-8 lg:-top-12
-            z-50
+            z-10
           "
         />
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-8">

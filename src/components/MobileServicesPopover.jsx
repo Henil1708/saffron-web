@@ -9,7 +9,7 @@ const MobileServicesPopover = ({ onLinkClick }) => {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left text-black text-[12px] font-bold focus:outline-none"
+        className="w-full text-left text-black text-base font-bold focus:outline-none"
       >
         Our Services
       </button>

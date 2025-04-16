@@ -10,13 +10,13 @@ const AIKkr = () => {
         text="AI-KKR"
         className="
           text-white font-bold 
-          text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px]
+          text-[20px]  md:text-[38px] lg:text-[40px]
           mx-auto 
           px-6 sm:px-10 md:px-20 
           w-[80%] sm:w-[364px] 
           leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[75px]
           -mt-4 sm:-mt-6 md:-mt-8 lg:-mt-10
-          z-50
+          z-10
         "
       />
       <div className="max-w-[1061px] mx-auto px-4">

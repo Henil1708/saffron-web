@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="bg-white">
-      <div className="container mx-auto flex items-center justify-between pt-16 pb-14 px-4">
+      <div className="container mx-auto flex items-center justify-between pt-4 sm:pt-8 md:pt-8 pb-4 sm:pb-8 md:pb-8 px-4">
         {/* Left: Logo */}
         <div className="flex items-center">
           <Link href="/" className="block relative w-28 md:w-36 lg:w-48">
@@ -69,8 +69,8 @@ const Header = () => {
         {/* Right: Contact Button & Mobile Toggle */}
         <div className="flex items-center">
           <Link
-            href="/contact-us"
-            className="hidden md:block text-white font-semibold bg-[#00ABAC] text-xl md:text-2xl px-4 py-2 rounded-full hover:bg-[#549999]"
+            href="#contact-form"
+            className="hidden md:block text-white font-semibold bg-[#00ABAC] text-base md:text-lg px-4 py-2 rounded-full hover:bg-[#549999]"
           >
             Contact Us
           </Link>
@@ -88,13 +88,26 @@ const Header = () => {
         </div>
       </div>
       {/* Mobile Navigation Menu */}
-      {mobileMenuOpen && (
-        <nav className="md:hidden bg-white">
-          <ul className="flex flex-col space-y-2 px-6 py-4">
+      <div
+        className={`fixed inset-0 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-end p-4">
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="focus:outline-none"
+            aria-label="Close Menu"
+          >
+            <MdClose className="text-2xl" />
+          </button>
+        </div>
+        <nav className="h-full">
+          <ul className="flex flex-col space-y-4 px-6 py-4">
             <li>
               <Link
                 href="/"
-                className="block text-black text-xs md:text-sm font-bold"
+                className="block text-black text-base font-bold"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
@@ -103,7 +116,7 @@ const Header = () => {
             <li>
               <Link
                 href="/about-us"
-                className="block text-black text-xs md:text-sm font-bold"
+                className="block text-black text-base font-bold"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About Us
@@ -112,7 +125,7 @@ const Header = () => {
             <li>
               <Link
                 href="/ai-kkr"
-                className="block text-black text-xs md:text-sm font-bold"
+                className="block text-black text-base font-bold"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 AI-KKR
@@ -126,7 +139,7 @@ const Header = () => {
             <li>
               <Link
                 href="/our-team"
-                className="block text-black text-xs md:text-sm font-bold"
+                className="block text-black text-base font-bold"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Our Team
@@ -135,7 +148,7 @@ const Header = () => {
             <li>
               <Link
                 href="/usps"
-                className="block text-black text-xs md:text-sm font-bold"
+                className="block text-black text-base font-bold"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 USPs
@@ -144,7 +157,7 @@ const Header = () => {
             <li>
               <Link
                 href="/patient-stories"
-                className="block text-black text-xs md:text-sm font-bold"
+                className="block text-black text-base font-bold"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Patient Stories
@@ -153,7 +166,7 @@ const Header = () => {
             <li>
               <Link
                 href="/contact-us"
-                className="block text-white font-semibold bg-[#00ABAC] text-base md:text-lg text-center py-2 rounded-full"
+                className="block text-white font-semibold bg-[#00ABAC] text-base text-center py-2 rounded-full mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Us
@@ -161,7 +174,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-      )}
+      </div>
     </header>
   );
 };

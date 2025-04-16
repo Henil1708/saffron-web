@@ -44,18 +44,18 @@ const USPs = () => {
   ];
 
   return (
-    <section className="relative py-8 sm:py-12 lg:py-16">
+    <section className="relative ">
       <TextWithBgVec
         text="USPs"
         className="
           text-white font-bold 
-          text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px]
+          text-[20px]  md:text-[38px] lg:text-[40px]
           mx-auto 
           px-6 sm:px-10 md:px-20 
           w-[80%] sm:w-[364px] 
           leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[75px]
           absolute -bottom-4 sm:-bottom-6 md:-bottom-[35px]
-          z-50
+          z-10
         "
       />
       <div className="bg-[#03BBBC] pt-20 pb-10">
@@ -63,7 +63,7 @@ const USPs = () => {
           <h2
             className="
             text-center text-white font-bold 
-            text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px]
+            text-[20px]  md:text-[38px] lg:text-[40px]
             leading-tight sm:leading-[52.34px]
           "
           >

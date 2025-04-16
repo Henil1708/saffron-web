@@ -50,7 +50,7 @@ export default function AiKKR() {
             w-[80%] sm:w-[300px] 
             leading-tight sm:leading-snug md:leading-normal lg:leading-normal
             absolute -top-2 sm:-top-3 md:-top-4 lg:-top-6
-            z-50
+            z-10
           "
         />
         <h1 className="container mx-auto text-4xl sm:text-5xl md:text-6xl text-white mb-6 mt-12">
@@ -281,7 +281,7 @@ export default function AiKKR() {
             w-[80%] sm:w-[300px] 
             leading-tight sm:leading-snug md:leading-normal lg:leading-normal
             absolute -top-2 sm:-top-3 md:-top-4 lg:-top-6
-            z-50
+            z-10
           "
         />
         <div className="container mx-auto px-4">

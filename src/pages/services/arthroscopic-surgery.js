@@ -81,7 +81,7 @@ const FractureManagementPage = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 md:py-10 ">
           <div className="w-full h-full aspect-video relative ml-auto">
             <Image
               src={"/images/services/right-3-sec-2.png"}
